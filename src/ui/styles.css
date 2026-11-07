@@ -10,3 +10,19 @@
 .portrait{font-size:0;position:relative}.portrait .head-shape{position:relative;width:34px;height:39px;border:2px solid #25344b;border-radius:48% 48% 44% 44%;background:linear-gradient(125deg,#ffe0bd 0%,#efbd99 72%,#d99372 100%);box-shadow:inset -4px -2px 0 #bb7e7044}.portrait .hair-shape{position:absolute;z-index:2;left:-2px;right:-2px;top:-3px;height:16px;border:2px solid #25344b;border-bottom:0;border-radius:60% 55% 35% 20%;background:#dfb353;transform:rotate(-3deg)}.portrait.nicolas .hair-shape{background:#533622}.portrait .eye{position:absolute;z-index:3;top:17px;width:3px;height:3px;border-radius:50%;background:#26344b}.portrait .left-eye{left:9px}.portrait .right-eye{right:9px}.portrait .glasses-shape{position:absolute;z-index:4;left:3px;top:13px;width:25px;height:10px;border-radius:3px;border:2px solid #24344a;background:linear-gradient(115deg,#c8e7f388,transparent);box-shadow:inset 9px 0 0 -7px #e8f3ed,inset -9px 0 0 -7px #e8f3ed}.portrait .glasses-shape:before,.portrait .glasses-shape:after{content:'';position:absolute;top:1px;width:7px;height:4px;background:#27364b}.portrait .glasses-shape:before{left:3px}.portrait .glasses-shape:after{right:3px}
 .touch-jump{display:none}
 @media(max-width:720px){.touch-controls{left:14px;right:auto;bottom:20px;display:flex;gap:10px}.touch.left,.touch.right{position:relative;margin:0}.touch-jump{position:absolute;z-index:5;right:18px;bottom:20px;display:grid;place-items:center;width:72px;height:72px;border-radius:50%;border:2px solid #a7f1ff;background:linear-gradient(145deg,#50d6e9e6,#236ba9e6);box-shadow:0 0 0 7px #61d8e833,0 8px 26px #07152e88;font-size:31px}.touch-jump:active{transform:scale(.94);background:#79eafa}}
+
+/* Combat controls and HUD: make the main action legible at a glance. */
+.action-dock{gap:9px}
+.action-button{border-color:#ffffff88;box-shadow:0 10px 30px #06102770,inset 0 1px 0 #ffffff30;transition:transform .14s,border-color .14s,filter .14s}
+.action-button:active{transform:scale(.94);filter:brightness(1.18)}
+.action-button.attack{background:linear-gradient(155deg,#fa9e61f2,#c84f55ed 72%,#873e68f0);border-color:#ffd1a9;box-shadow:0 0 0 3px #f8896330,0 9px 28px #120f2b77,inset 0 1px 0 #fff8}
+.action-button.attack>span{color:#fff3c4;text-shadow:0 0 14px #fff0a8}
+.action-button.power{background:linear-gradient(155deg,#346e9ef2,#194a79ed 72%,#273c75f0);border-color:#a9edff}
+.action-button.call{background:linear-gradient(155deg,#366c76ef,#1c4c69ed 72%,#223b65f0)}
+.hud{backdrop-filter:blur(4px);border-bottom:1px solid #ffffff18}
+.progress-track{height:9px;box-shadow:0 1px 7px #07172a88}
+.progress-fill{box-shadow:0 0 14px #5ee5f0a8}
+.hearts{filter:drop-shadow(0 2px 8px #ff527b55)}
+.level-card,.kid-card,.suit-card{box-shadow:0 12px 30px #050c1b30}
+.level-card:focus-visible,.kid-card:focus-visible,.suit-card:focus-visible,.primary:focus-visible,.action-button:focus-visible{outline:2px solid #b8f5ff;outline-offset:3px}
+@media(max-width:720px){.action-dock{right:12px;bottom:102px;gap:6px}.action-button{width:60px;height:58px;border-radius:15px}.action-button b{font-size:6px}.action-button.attack{border-width:2px}.touch-jump{right:16px;bottom:18px}}
