@@ -1,4 +1,4 @@
-type SoundName = 'attack'|'power'|'impact'|'hit'|'jump'|'ally'|'win';
+type SoundName = 'attack'|'power'|'impact'|'hit'|'jump'|'ally'|'win'|'coin'|'defeat'|'land'|'unlock'|'ui';
 
 /** Tiny synthesized sound layer: no remote media, files, or network dependency. */
 class ManatiAudio {
@@ -77,7 +77,7 @@ class ManatiAudio {
 
   play(name: SoundName) {
     const now = performance.now();
-    const limit: Partial<Record<SoundName, number>> = { attack: 90, impact: 55, jump: 110 };
+    const limit: Partial<Record<SoundName, number>> = { attack: 90, impact: 55, jump: 110, coin: 65, land: 100, defeat: 70 };
     if (limit[name] && now - (this.lastSound[name] ?? 0) < limit[name]!) return;
     this.lastSound[name] = now;
     const v = this.effectsVolume;
@@ -88,6 +88,11 @@ class ManatiAudio {
       case 'hit': this.tone(110, .22, v * .32, 'sawtooth'); this.tone(72, .28, v * .22, 'triangle', .035); break;
       case 'jump': this.tone(360, .12, v * .16, 'sine'); this.tone(510, .16, v * .12, 'triangle', .04); break;
       case 'ally': this.tone(480, .12, v * .2, 'triangle'); this.tone(720, .19, v * .18, 'sine', .07); break;
+      case 'coin': this.tone(880,.07,v*.22,'sine');this.tone(1320,.12,v*.16,'triangle',.045);break;
+      case 'land': this.tone(105,.09,v*.17,'triangle');this.tone(170,.06,v*.08,'sine',.02);break;
+      case 'defeat': this.tone(330,.12,v*.18,'triangle');this.tone(220,.16,v*.13,'sine',.05);break;
+      case 'unlock': [587.3,784,987.8].forEach((n,i)=>this.tone(n,.22,v*.18,'triangle',i*.075));break;
+      case 'ui': this.tone(620,.07,v*.12,'sine');break;
       case 'win': [523.3, 659.3, 784, 1046.5].forEach((n, i) => this.tone(n, .38, v * .22, 'triangle', i * .11)); break;
     }
   }

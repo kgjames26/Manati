@@ -114,3 +114,7 @@
 @keyframes shop-pulse{0%,100%{filter:brightness(1);box-shadow:0 0 0 3px #ffce6033,0 0 17px #ffb33c66,0 8px 22px #07152e99}50%{filter:brightness(1.35);box-shadow:0 0 0 7px #ffce604d,0 0 33px #ffb33ccc,0 8px 26px #07152eaa}}
 @media(max-width:720px){.shop-trigger{top:72px;right:12px;left:auto;min-height:44px;padding:7px 10px;gap:6px;font-size:8px}.shop-trigger svg{width:23px;height:23px}.shop-trigger b{font-size:12px}.shop-trigger small{font-size:7px}}
 @media(prefers-reduced-motion:reduce){.shop-trigger{animation:none}}
+/* The shop calls attention once per mission; after its first visit it stays calm. */
+.shop-trigger{animation:none;box-shadow:0 0 0 3px #ffce6030,0 8px 22px #07152e88;transition:transform .18s ease,filter .18s ease,box-shadow .18s ease}
+.shop-trigger.needs-attention{animation:shop-pulse 1.15s ease-in-out infinite;box-shadow:0 0 0 4px #ffce6048,0 0 25px #ffb33c70,0 9px 24px #07152e99}
+@media(prefers-reduced-motion:reduce){.shop-trigger.needs-attention{animation:none;outline:2px solid #ffe69d;outline-offset:2px}}
