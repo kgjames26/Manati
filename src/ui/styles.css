@@ -90,3 +90,6 @@
 .story-kid-portrait.ludo{width:76px;height:128px;animation-delay:-1.8s}
 @keyframes story-rise{to{transform:translateY(-5px)}}
 @media(max-width:720px){.story-kids{gap:8px}.story-kid-portrait.nathan{width:49px;height:75px}.story-kid-portrait.timeo{width:57px;height:90px}.story-kid-portrait.ludo{width:62px;height:103px}}
+
+/* Mobile boss-dodge controls: Dive sits directly to the left of Jump. */
+@media(max-width:720px){.touch-dive{position:absolute;z-index:5;right:98px;bottom:21px;display:grid;place-items:center;width:62px;height:62px;border-radius:20px;border:2px solid #ffcf78;background:linear-gradient(145deg,#bd7044ed,#683c53ed);box-shadow:0 0 0 6px #ffc76b2b,0 8px 26px #07152e88;font-size:28px}.touch-dive:active{transform:scale(.94);background:#ed9c56}.touch-jump{right:18px;bottom:16px;width:72px;height:72px}.action-button.dive{display:none}}
