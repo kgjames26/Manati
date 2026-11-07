@@ -66,3 +66,18 @@
 @media(max-width:720px){.touch-controls .touch.left,.touch-controls .touch.right{width:68px;height:68px;border-radius:21px;font-size:27px}}
 .action-button.call{order:0}.action-button.superweapon{order:1;background:linear-gradient(145deg,#fff0a9,#f2a337 54%,#ae4e39);border:2px solid #fff1b8;color:#392219;box-shadow:0 0 0 4px #ffc65444,0 0 28px #ffae3d88,0 9px 24px #08142caa}.action-button.superweapon>span{color:#fffce4;text-shadow:0 0 12px #fff}.action-button.superweapon b{color:#fff9e5}.action-button.power{order:2}.action-button.attack{order:3}.action-button.dive{order:4}
 .level-card.locked,.level-card.locked:hover{filter:grayscale(.85);opacity:.38;cursor:not-allowed;transform:none;border-color:#ffffff12;background:#0a1428}.level-card.locked .level-number{color:#a9b5c7;background:#25334a}.level-card.locked .level-name{color:#8894a9}
+
+.character-back{display:flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid #ffffff25;border-radius:13px;background:#ffffff0b;color:#e9f5ff}
+.character-back .character-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:11px;background:linear-gradient(145deg,#4cbed7,#36539a);font-size:22px;box-shadow:0 0 18px #50c8e855}
+.character-back span:nth-child(2){font-weight:700}
+.character-back b{color:#ffda79;font-size:17px}
+.character-back:hover{background:#23436a;border-color:#8be9fa}
+.action-button.invisibility{border-color:#b7e9ff;background:linear-gradient(150deg,#315a79de,#132a4ddc);box-shadow:0 0 16px #7be5ff44}
+.action-button.invincibility{border-color:#fff0a0;background:linear-gradient(150deg,#735b29de,#352746dc);box-shadow:0 0 20px #ffe27a55}
+.action-button.invincibility>span{color:#fff4ab;text-shadow:0 0 14px #fff1a0}
+.action-dock{max-height:calc(100dvh - 190px);overflow-y:auto;scrollbar-width:none}
+.action-dock::-webkit-scrollbar{display:none}
+.shop-modal{max-height:calc(100dvh - 24px)}
+@media(max-width:720px){.action-dock{max-height:calc(100dvh - 178px);overflow-y:auto;gap:4px}.action-button{height:53px}.action-button.call{height:70px}.character-back{gap:6px;padding:5px 7px;font-size:10px}.character-back .character-icon{width:32px;height:32px;font-size:20px}}
+.action-button .ultimate-icon{display:grid;place-items:center;width:26px;height:26px;color:#ffe17a}
+.action-button .ultimate-icon svg{width:23px;height:23px}
