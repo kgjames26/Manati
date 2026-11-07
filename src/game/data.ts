@@ -1,6 +1,7 @@
 export type KidId = 'nathan'|'timeo'|'nicolas';
 export type SuitId = 'arachnid'|'armored'|'titan'|'night'|'solar'|'ocean'|'claw';
 export type HeroId = 'web'|'armor'|'giant'|'night'|'solar'|'ocean'|'claw';
+export const specialCooldown:Record<SuitId,number>={arachnid:4,armored:5,titan:6.2,night:3.5,solar:4.8,ocean:5.3,claw:4.2};
 export const kids = [
  {id:'nathan' as const,name:'Nathan',age:4,tag:'Petit mais intrépide',color:'#ffb52e',speed:4.3,jump:7.3,heart:5},
  {id:'timeo' as const,name:'Timéo',age:9,tag:'Vif et inventif',color:'#42d9ff',speed:5.25,jump:7.8,heart:4},
