@@ -44,3 +44,12 @@
 /* Full-body costume silhouettes in the hero selection */
 .suit-card{min-height:198px;padding:7px 7px 10px}.hero-suit-portrait{height:126px;width:min(100%,96px);overflow:visible}.suit-card small{max-width:165px}.suit-card.selected{background:linear-gradient(155deg,color-mix(in srgb,var(--suit),#15213b 84%),#08152b)}.suit-card.selected::after{height:3px;opacity:1}.suit-card.selected .hero-suit-portrait{filter:drop-shadow(0 7px 12px color-mix(in srgb,var(--suit),transparent 38%))}
 @media(max-width:720px){.suit-card{min-height:146px;padding:5px 3px 8px}.hero-suit-portrait{height:76px;width:100%}.suit-card b{font-size:8px}.suit-card small{min-height:28px;font-size:6.5px}}
+
+/* The ally button previews the exact hero that the next call will summon. */
+.action-button.call{height:88px;gap:2px;border:1px solid #b8f8ff;background:linear-gradient(150deg,#398b9bfa,#15526ff5 68%,#18355ef5);box-shadow:0 0 0 3px #59e7f633,0 0 23px #3bc9e644,0 10px 28px #06102788,inset 0 1px #ffffff55}
+.action-button.call .call-hero-art{display:grid;place-items:center;width:36px;height:44px;border:1px solid #d8fcff88;border-radius:9px;background:#06183199;overflow:hidden;box-shadow:0 0 13px #64e9ff66}
+.action-button.call .hero-suit-portrait{display:block;width:32px;height:42px;min-width:32px;filter:drop-shadow(0 2px 4px #06112caa)}
+.action-button.call>b{max-width:70px;overflow:hidden;text-overflow:ellipsis;font-size:6px;letter-spacing:0;color:#f1fdff}
+.action-button.call>small{top:3px;right:4px;z-index:1;min-width:14px;padding:2px 3px;border-radius:7px;background:#d7fbff;color:#104160;font-weight:800;text-align:center}
+.action-button.call>i{z-index:0;background:#07182aa8}
+@media(max-width:720px){.action-button.call{width:60px;height:76px;gap:1px}.action-button.call .call-hero-art{width:32px;height:38px;border-radius:8px}.action-button.call .hero-suit-portrait{width:28px;height:36px;min-width:28px}.action-button.call>b{font-size:5.5px;max-width:55px}.action-button.call>small{font-size:7px}}
