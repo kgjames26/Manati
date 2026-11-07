@@ -3,9 +3,9 @@ export type SuitId = 'arachnid'|'armored'|'titan'|'night'|'solar'|'ocean'|'claw'
 export type HeroId = 'web'|'armor'|'giant'|'night'|'solar'|'ocean'|'claw'|'thunder';
 export const specialCooldown:Record<SuitId,number>={arachnid:4,armored:5,titan:6.2,night:3.5,solar:4.8,ocean:5.3,claw:4.2,thunder:5.4};
 export const kids = [
- {id:'nathan' as const,name:'Nathan',age:4,tag:'Petit mais intrépide',color:'#ffb52e',speed:4.3,jump:7.3,heart:5},
- {id:'timeo' as const,name:'Timéo',age:9,tag:'Vif et inventif',color:'#42d9ff',speed:5.25,jump:7.8,heart:4},
- {id:'nicolas' as const,name:'Ludo',age:15,tag:'Le stratège',color:'#b68cff',speed:5.8,jump:8.3,heart:4}
+ {id:'nathan' as const,name:'Nathan',age:4,color:'#ffb52e',speed:4.3,jump:7.3,heart:6},
+ {id:'timeo' as const,name:'Timéo',age:9,color:'#42d9ff',speed:5.25,jump:7.8,heart:5},
+ {id:'nicolas' as const,name:'Ludo',age:15,color:'#b68cff',speed:5.8,jump:8.3,heart:4}
 ];
 export const suits = [
  {id:'arachnid' as const,name:'Spider-Man',hero:'web' as const,color:'#e94751',accent:'#1d2e64',power:'Bond propulsé, toile qui immobilise et attire les Zorks'},
