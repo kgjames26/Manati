@@ -53,3 +53,6 @@
 .action-button.call>small{top:3px;right:4px;z-index:1;min-width:14px;padding:2px 3px;border-radius:7px;background:#d7fbff;color:#104160;font-weight:800;text-align:center}
 .action-button.call>i{z-index:0;background:#07182aa8}
 @media(max-width:720px){.action-button.call{width:60px;height:76px;gap:1px}.action-button.call .call-hero-art{width:32px;height:38px;border-radius:8px}.action-button.call .hero-suit-portrait{width:28px;height:36px;min-width:28px}.action-button.call>b{font-size:5.5px;max-width:55px}.action-button.call>small{font-size:7px}}
+
+/* Keep summon first, then the strong and quick attacks in that order. */
+.action-button.call{order:0}.action-button.power{order:1}.action-button.attack{order:2}.action-button.dive{order:3}
