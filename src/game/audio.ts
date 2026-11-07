@@ -1,4 +1,4 @@
-type SoundName = 'attack'|'power'|'impact'|'hit'|'jump'|'ally'|'win'|'coin'|'defeat'|'land'|'unlock'|'ui';
+type SoundName = 'attack'|'power'|'impact'|'hit'|'jump'|'ally'|'win'|'coin'|'defeat'|'land'|'unlock'|'ui'|'checkpoint';
 
 /** Tiny synthesized sound layer: no remote media, files, or network dependency. */
 class ManatiAudio {
@@ -93,6 +93,7 @@ class ManatiAudio {
       case 'defeat': this.tone(330,.12,v*.18,'triangle');this.tone(220,.16,v*.13,'sine',.05);break;
       case 'unlock': [587.3,784,987.8].forEach((n,i)=>this.tone(n,.22,v*.18,'triangle',i*.075));break;
       case 'ui': this.tone(620,.07,v*.12,'sine');break;
+      case 'checkpoint': this.tone(520,.12,v*.16,'triangle');this.tone(780,.18,v*.15,'sine',.06);break;
       case 'win': [523.3, 659.3, 784, 1046.5].forEach((n, i) => this.tone(n, .38, v * .22, 'triangle', i * .11)); break;
     }
   }
