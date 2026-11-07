@@ -24,6 +24,6 @@ Vercel : commande de build `npm run build`, dossier de sortie `dist`.
 - Mobile : boutons tactiles à l’écran.
 - Pause : bouton en haut à droite.
 
-L’âge du joueur est indépendant de l’âge des personnages et règle le nombre d’ennemis et d’obstacles. Nathan a 4 ans, Timéo 9 ans et Nicolas 15 ans. La progression est enregistrée dans le navigateur.
+L’âge du joueur est indépendant de l’âge des personnages et règle le nombre d’ennemis et d’obstacles. Les âges de Nathan (né en 2022), Timéo (né en 2017) et de leur père Ludo (né en 1987) sont calculés automatiquement depuis leurs dates de naissance. La progression est enregistrée dans le navigateur.
 
 Les missions utilisent des parcours générés avec rues, plateformes, caisses, pièces, ennemis, pointes, checkpoints et portails dans des villes terrestres. Les tenues donnent des pouvoirs distincts et trois alliés aléatoires peuvent être appelés.
