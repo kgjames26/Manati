@@ -17,6 +17,8 @@
 .action-button:active{transform:scale(.94);filter:brightness(1.18)}
 .action-button.attack{background:linear-gradient(155deg,#fa9e61f2,#c84f55ed 72%,#873e68f0);border-color:#ffd1a9;box-shadow:0 0 0 3px #f8896330,0 9px 28px #120f2b77,inset 0 1px 0 #fff8}
 .action-button.attack>span{color:#fff3c4;text-shadow:0 0 14px #fff0a8}
+.action-button.attack>span svg{display:block;width:28px;height:28px;filter:drop-shadow(0 0 5px currentColor)}
+.action-button.power>span svg{display:block;width:26px;height:26px;filter:drop-shadow(0 0 6px currentColor)}
 .action-button.power{background:linear-gradient(155deg,#346e9ef2,#194a79ed 72%,#273c75f0);border-color:#a9edff}
 .action-button.call{background:linear-gradient(155deg,#366c76ef,#1c4c69ed 72%,#223b65f0)}
 .action-button.dive{background:linear-gradient(155deg,#6456a3ef,#443978ed 72%,#283b68f0);border-color:#c7baff}.action-button.dive>span{color:#d7cbff;font-size:27px}
