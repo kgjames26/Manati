@@ -105,3 +105,12 @@
 @media(max-width:720px){.level-chapters{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-height:calc(100dvh - 275px);margin:14px 0 105px;padding:3px 2px 12px}.level-act-heading{padding:10px 11px;gap:4px 9px}.level-act-heading>b{font-size:13px}.level-act-heading>small{font-size:9px}.level-act-heading>span{font-size:8px}.level-card{min-height:58px}.pause-settings{padding:11px;margin:13px 0}.pause-settings>label{grid-template-columns:78px 1fr 34px;gap:8px}.control-guide{font-size:9px}.control-guide small{font-size:8px}.mission-result{margin:12px 0;padding:12px}.setting-toggle small{font-size:8px}}
 /* Comfortable, fixed touch layout for children: movement on the left, Dive beside Jump. */
 @media(max-width:720px){.touch-controls{gap:12px;bottom:max(18px,env(safe-area-inset-bottom))}.touch-controls .touch.left,.touch-controls .touch.right{width:70px;height:70px}.touch-dive{right:102px;bottom:max(21px,calc(env(safe-area-inset-bottom) + 3px));width:66px;height:66px}.touch-jump{right:18px;bottom:max(18px,env(safe-area-inset-bottom));width:74px;height:74px}.touch{touch-action:none;-webkit-user-select:none;user-select:none}}
+
+/* The shop becomes a persistent, blinking action as soon as 50 coins are earned. */
+.shop-trigger{top:78px;left:auto;right:22px;display:flex;align-items:center;gap:8px;min-height:48px;padding:8px 13px;border:1px solid #ffe69d;border-radius:15px;background:linear-gradient(135deg,#bf7138f5,#754278f5);color:#fff8df;box-shadow:0 0 0 4px #ffce6038,0 0 25px #ffb33c80,0 9px 24px #07152e99;font:800 10px 'DM Mono',monospace;letter-spacing:.06em;animation:shop-pulse 1.05s ease-in-out infinite}
+.shop-trigger svg{width:25px;height:25px;fill:none;stroke:#fff2c4;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 5px #fff4bc99)}
+.shop-trigger b{font-size:14px;color:#fff1a8}.shop-trigger small{font:700 8px 'DM Mono',monospace;color:#ffe7b9;margin-left:-6px}
+.shop-trigger:hover{filter:brightness(1.15);transform:translateY(-2px)}
+@keyframes shop-pulse{0%,100%{filter:brightness(1);box-shadow:0 0 0 3px #ffce6033,0 0 17px #ffb33c66,0 8px 22px #07152e99}50%{filter:brightness(1.35);box-shadow:0 0 0 7px #ffce604d,0 0 33px #ffb33ccc,0 8px 26px #07152eaa}}
+@media(max-width:720px){.shop-trigger{top:72px;right:12px;left:auto;min-height:44px;padding:7px 10px;gap:6px;font-size:8px}.shop-trigger svg{width:23px;height:23px}.shop-trigger b{font-size:12px}.shop-trigger small{font-size:7px}}
+@media(prefers-reduced-motion:reduce){.shop-trigger{animation:none}}
