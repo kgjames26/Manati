@@ -7,13 +7,13 @@ export const kids = [
  {id:'nicolas' as const,name:'Nicolas',age:15,tag:'Le stratège',color:'#b68cff',speed:5.8,jump:8.3,heart:4}
 ];
 export const suits = [
- {id:'arachnid' as const,name:'Spider-Man',hero:'web' as const,color:'#e94751',accent:'#1d2e64',power:'Toile : immobilise les ennemis proches'},
- {id:'armored' as const,name:'Iron Man',hero:'armor' as const,color:'#d9443e',accent:'#f0bd55',power:'Bouclier énergétique : protège des coups'},
- {id:'titan' as const,name:'Hulk',hero:'giant' as const,color:'#3cbd72',accent:'#6530a1',power:'Force colossale : super saut et choc puissant'},
- {id:'night' as const,name:'Batman',hero:'night' as const,color:'#354d7a',accent:'#f4cf60',power:'Cape : chute ralentie'},
- {id:'solar' as const,name:'Superman',hero:'solar' as const,color:'#e74d53',accent:'#f4c949',power:'Rayon solaire : frappe à longue portée'},
- {id:'ocean' as const,name:'Aquaman',hero:'ocean' as const,color:'#178fc2',accent:'#f5c648',power:'Vague : accélération éclair'},
- {id:'claw' as const,name:'Wolverine',hero:'claw' as const,color:'#d79a36',accent:'#355d47',power:'Griffes : frappe puissante'}
+ {id:'arachnid' as const,name:'Spider-Man',hero:'web' as const,color:'#e94751',accent:'#1d2e64',power:'Bond propulsé, toile qui immobilise et attire les Zorks'},
+ {id:'armored' as const,name:'Iron Man',hero:'armor' as const,color:'#d9443e',accent:'#f0bd55',power:'Propulseurs ascendants, tir répulseur et blindage bref'},
+ {id:'titan' as const,name:'Hulk',hero:'giant' as const,color:'#3cbd72',accent:'#6530a1',power:'Super-saut vertical, puis onde de choc au sol'},
+ {id:'night' as const,name:'Batman',hero:'night' as const,color:'#354d7a',accent:'#f4cf60',power:'Batarang à distance, bond et descente ralentie'},
+ {id:'solar' as const,name:'Superman',hero:'solar' as const,color:'#e74d53',accent:'#f4c949',power:'Rayon thermique perforant et impulsion de vol'},
+ {id:'ocean' as const,name:'Aquaman',hero:'ocean' as const,color:'#178fc2',accent:'#f5c648',power:'Ruée aquatique, vague offensive et petit envol'},
+ {id:'claw' as const,name:'Wolverine',hero:'claw' as const,color:'#d79a36',accent:'#355d47',power:'Ruée bondissante et frappe de griffes'}
 ];
 export type Level = {id:number;act:number;boss:boolean;name:string;biome:string;length:number;platforms:number;enemies:number;gaps:number;color:string;story:string};
 const names=['Centre-ville','Le vieux port','Les toits du quartier','La grande avenue','Le parc urbain','La gare centrale','Le quartier des docks','Les ruelles anciennes','Le pont de la rivière','La place des héros','Le métro abandonné','Le boulevard final'];
