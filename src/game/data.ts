@@ -12,9 +12,9 @@ export const suits = [
  {id:'armored' as const,name:'Iron Man',hero:'armor' as const,color:'#d9443e',accent:'#f0bd55',power:'Propulseurs ascendants, tir répulseur et blindage bref'},
  {id:'titan' as const,name:'Hulk',hero:'giant' as const,color:'#3cbd72',accent:'#6530a1',power:'Super-saut vertical, puis onde de choc au sol'},
  {id:'night' as const,name:'Batman',hero:'night' as const,color:'#354d7a',accent:'#f4cf60',power:'Batarang à distance, bond et descente ralentie'},
- {id:'solar' as const,name:'Superman',hero:'solar' as const,color:'#e74d53',accent:'#f4c949',power:'Rayon thermique perforant et impulsion de vol'},
+ {id:'solar' as const,name:'Superman',hero:'solar' as const,color:'#2868c8',accent:'#e74d53',power:'Rayon thermique perforant et impulsion de vol'},
  {id:'ocean' as const,name:'Aquaman',hero:'ocean' as const,color:'#178fc2',accent:'#f5c648',power:'Ruée aquatique, vague offensive et petit envol'},
- {id:'claw' as const,name:'Wolverine',hero:'claw' as const,color:'#d79a36',accent:'#355d47',power:'Ruée bondissante et frappe de griffes'}
+ {id:'claw' as const,name:'Wolverine',hero:'claw' as const,color:'#e5b43e',accent:'#263e65',power:'Ruée bondissante et frappe de griffes'}
 ];
 export type Level = {id:number;act:number;boss:boolean;name:string;biome:string;length:number;platforms:number;enemies:number;gaps:number;color:string;story:string};
 const names=['Centre-ville','Le vieux port','Les toits du quartier','La grande avenue','Le parc urbain','La gare centrale','Le quartier des docks','Les ruelles anciennes','Le pont de la rivière','La place des héros','Le métro abandonné','Le boulevard final'];
