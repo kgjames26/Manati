@@ -7,16 +7,16 @@ export const kids = [
  {id:'nicolas' as const,name:'Nicolas',age:15,tag:'Le stratège',color:'#b68cff',speed:5.8,jump:8.3,heart:4}
 ];
 export const suits = [
- {id:'arachnid' as const,name:'Tisseur',hero:'web' as const,color:'#e94751',accent:'#1d2e64',power:'Filet éclair : immobilise les ennemis proches'},
- {id:'armored' as const,name:'Armure stellaire',hero:'armor' as const,color:'#d9443e',accent:'#f0bd55',power:'Bouclier d’énergie : protège quelques secondes'},
- {id:'titan' as const,name:'Titan émeraude',hero:'giant' as const,color:'#3cbd72',accent:'#6530a1',power:'Super saut : bondit plus haut'},
- {id:'night' as const,name:'Justicier nocturne',hero:'night' as const,color:'#354d7a',accent:'#f4cf60',power:'Cape planante : chute ralentie'},
- {id:'solar' as const,name:'Héros solaire',hero:'solar' as const,color:'#e74d53',accent:'#f4c949',power:'Rayon solaire : repousse les ennemis'},
- {id:'ocean' as const,name:'Gardien des océans',hero:'ocean' as const,color:'#178fc2',accent:'#f5c648',power:'Vague bleue : traverse les obstacles'},
- {id:'claw' as const,name:'Fauve indomptable',hero:'claw' as const,color:'#d79a36',accent:'#355d47',power:'Rage héroïque : frappe puissante'}
+ {id:'arachnid' as const,name:'Spider-Man',hero:'web' as const,color:'#e94751',accent:'#1d2e64',power:'Toile : immobilise les ennemis proches'},
+ {id:'armored' as const,name:'Iron Man',hero:'armor' as const,color:'#d9443e',accent:'#f0bd55',power:'Bouclier énergétique : protège des coups'},
+ {id:'titan' as const,name:'Hulk',hero:'giant' as const,color:'#3cbd72',accent:'#6530a1',power:'Force colossale : super saut et choc puissant'},
+ {id:'night' as const,name:'Batman',hero:'night' as const,color:'#354d7a',accent:'#f4cf60',power:'Cape : chute ralentie'},
+ {id:'solar' as const,name:'Superman',hero:'solar' as const,color:'#e74d53',accent:'#f4c949',power:'Rayon solaire : frappe à longue portée'},
+ {id:'ocean' as const,name:'Aquaman',hero:'ocean' as const,color:'#178fc2',accent:'#f5c648',power:'Vague : accélération éclair'},
+ {id:'claw' as const,name:'Wolverine',hero:'claw' as const,color:'#d79a36',accent:'#355d47',power:'Griffes : frappe puissante'}
 ];
 export type Level = {name:string; biome:string; length:number; platforms:number; enemies:number; gaps:number; color:string; story:string};
 const names=['Centre-ville','Le vieux port','Les toits du quartier','La grande avenue','Le parc urbain','La gare centrale','Le quartier des docks','Les ruelles anciennes','Le pont de la rivière','La place des héros','Le métro abandonné','Le boulevard final'];
 const biomes=['Bruxelles','Paris','Londres','New York','Tokyo','Rio de Janeiro','Rome','Sydney','Le Caire','Barcelone','Montréal','Amsterdam'];
-export const levels:Level[]=Array.from({length:80},(_,i)=>({name:names[i%12]+(i>=12?` ${Math.floor(i/12)+1}`:''),biome:biomes[i%12],length:112+(i%6)*12,platforms:12+(i%4),enemies:3+(i%5),gaps:3+(i%3),color:['#6cce91','#42b8a0','#e99559','#6388d9','#a98ee8','#eb795c'][i%6],story:i===0?'Une pluie d’étoiles annonce l’arrivée des Zorks. Les trois frères découvrent un signal de détresse : les héros ont besoin de renfort !':i===79?'Le cœur du vaisseau mère est tout proche. Ensemble, les héros vont sauver la Terre !':'Les Zorks avancent. Les garçons et leurs alliés poursuivent leur mission pour défendre la Terre.'}));
-export const heroNames:Record<HeroId,string>={web:'Tisseur',armor:'Armure stellaire',giant:'Titan émeraude',night:'Justicier nocturne',solar:'Héros solaire',ocean:'Gardien des océans',claw:'Fauve indomptable'};
+export const levels:Level[]=Array.from({length:80},(_,i)=>({name:names[i%12]+(i>=12?` ${Math.floor(i/12)+1}`:''),biome:biomes[i%12],length:112+(i%6)*12,platforms:12+(i%4),enemies:3+(i%5),gaps:3+(i%3),color:['#6cce91','#42b8a0','#e99559','#6388d9','#a98ee8','#eb795c'][i%6],story:i===0?'Une pluie d’étoiles annonce l’arrivée des Zorks. Les trois frères découvrent un signal de détresse : les héros ont besoin de renfort !':i===79?'Sur le boulevard final, les trois frères repoussent les derniers Zorks. Ensemble, les héros sauvent la Terre !':'Les Zorks avancent. Les garçons et leurs alliés poursuivent leur mission pour défendre la Terre.'}));
+export const heroNames:Record<HeroId,string>={web:'Spider-Man',armor:'Iron Man',giant:'Hulk',night:'Batman',solar:'Superman',ocean:'Aquaman',claw:'Wolverine'};
