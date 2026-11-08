@@ -1,4 +1,4 @@
-export type KidId = string;
+export type KidId = 'nathan'|'timeo'|'nicolas'|'leni'|'rose'|'olivier'|'maya'|'sami'|'ines'|'adam'|'zoe'|'youssef'|'chloe'|'elias'|'aya'|'hugo'|'lina'|'noe'|'jade'|'malo'|'amara'|'lucas'|'nina'|'malik'|'louise'|'enzo'|'sacha';
 export type BirthDate = readonly [year:number,month:number,day:number];
 export function ageFromBirthDate([year,month,day]:BirthDate,now=new Date()):number{
  const beforeBirthday=now.getMonth()+1<month||(now.getMonth()+1===month&&now.getDate()<day);
