@@ -22,7 +22,7 @@ export const suits = [
  {id:'claw' as const,name:'Wolverine',hero:'claw' as const,color:'#e5b43e',accent:'#263e65',power:'Ruée bondissante et frappe de griffes'},
  {id:'thunder' as const,name:'Thor',hero:'thunder' as const,color:'#3678bd',accent:'#f2c653',power:'Mjolnir lancé et super coup : tempête de foudre'},
  {id:'wonder' as const,name:'Wonder Woman',hero:'wonder' as const,color:'#bd3749',accent:'#f3c755',power:'Lasso doré : fouet précis, capture et grand tourbillon'},
- {id:'flash' as const,name:'Flash',hero:'flash' as const,color:'#dc3c3a',accent:'#ffe66c',power:'Éclair-éclair : frappe éclair qui traverse puis revient'},
+ {id:'flash' as const,name:'Flash',hero:'flash' as const,color:'#f3123c',accent:'#fff20a',power:'Éclair-éclair : frappe éclair qui traverse puis revient'},
  {id:'antman' as const,name:'Ant-Man',hero:'antman' as const,color:'#a8303a',accent:'#e7c47b',power:'Change de taille : 50 % pour se faufiler, 300 % pour écraser'},
  {id:'psychic' as const,name:'Sans costume',hero:'psychic' as const,color:'#43b8bc',accent:'#b69aff',power:'Télépathie : pensée guidée, vague mentale et confusion des Zorks'}
 ];
