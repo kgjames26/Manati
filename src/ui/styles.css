@@ -132,3 +132,14 @@
 .shop-item small{font-size:11px;line-height:1.4;color:#e0e9f7;min-height:30px}
 @media(max-width:720px){.shop-item .shop-icon{grid-row:1/3;width:62px;height:62px;border-radius:17px}.shop-item .shop-glyph{width:54px;height:54px}.shop-item b{font-size:13px}.shop-item small{font-size:10px;line-height:1.35}}
 .ant-size-controls{position:absolute;left:0;bottom:78px;display:flex;gap:10px;pointer-events:auto}.touch.ant-size{width:48px;height:42px;border-radius:14px;background:linear-gradient(145deg,#434f6b,#25334e);border:1px solid #d8d0ff;font-size:23px;line-height:1;box-shadow:0 5px 15px #06122a88}.touch.ant-size:active{background:#7666a8;transform:scale(.94)}
+
+/* Scrollable, finger friendly avatar roster. */
+.kid-grid{display:flex;gap:11px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#60cfe688 #ffffff0c;padding:4px 2px 12px;margin:14px 0 20px;}
+.kid-grid .kid-card{flex:0 0 146px;min-height:222px;scroll-snap-align:start;padding:12px 10px;}
+.kid-grid .roster-label{position:sticky;left:0;align-self:flex-start;flex:0 0 auto;margin:0 -6px 0 0;padding:6px 8px;border-radius:8px;background:#122442;color:#a6d8ef;font:700 9px 'DM Mono',monospace;letter-spacing:.12em;writing-mode:vertical-rl;transform:rotate(180deg);z-index:1;}
+.kid-portrait-art{display:block;width:100%;height:100%;}
+.kid-stats{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:3px 6px;margin-top:4px;color:#9bb0ce;font-size:8px;text-align:left;}
+.kid-stats span{white-space:nowrap;}
+.kid-stats i{color:#eaf6ff;font-style:normal;font-weight:800;}
+.kid-card .kid-style{font-size:8px;line-height:1.25;min-height:20px;color:#b9c8df;}
+@media(max-width:720px){.kid-grid{gap:8px;margin:10px 0 15px;}.kid-grid .kid-card{flex-basis:126px;min-height:210px;padding:10px 7px;}.kid-grid .avatar.portrait{width:62px;height:62px;}.kid-grid .kid-card small{font-size:8px;}.kid-grid .kid-stats{font-size:7px;}}
