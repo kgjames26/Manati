@@ -118,3 +118,16 @@
 .shop-trigger{animation:none;box-shadow:0 0 0 3px #ffce6030,0 8px 22px #07152e88;transition:transform .18s ease,filter .18s ease,box-shadow .18s ease}
 .shop-trigger.needs-attention{animation:shop-pulse 1.15s ease-in-out infinite;box-shadow:0 0 0 4px #ffce6048,0 0 25px #ffb33c70,0 9px 24px #07152e99}
 @media(prefers-reduced-motion:reduce){.shop-trigger.needs-attention{animation:none;outline:2px solid #ffe69d;outline-offset:2px}}
+
+/* Large, child-readable illustrations for the mission shop. */
+.shop-item .shop-icon{display:grid;place-items:center;flex:none;width:76px;height:76px;border:2px solid #ffffff8a;border-radius:22px;background:radial-gradient(circle at 35% 25%,#ffffff38,#ffffff0b 72%);box-shadow:inset 0 2px 5px #fff3,0 5px 14px #06132988}
+.shop-item .shop-glyph{display:block;width:64px;height:64px;overflow:visible;filter:drop-shadow(0 3px 4px #06132988)}
+.shop-items .shop-item:nth-child(1) .shop-icon{background:linear-gradient(145deg,#a53c5b,#4c294a);border-color:#ff9bb0}
+.shop-items .shop-item:nth-child(2) .shop-icon{background:linear-gradient(145deg,#a86b20,#573637);border-color:#ffe17f}
+.shop-items .shop-item:nth-child(3) .shop-icon{background:linear-gradient(145deg,#28789b,#263960);border-color:#9cecff}
+.shop-items .shop-item:nth-child(4) .shop-icon{background:linear-gradient(145deg,#2874aa,#2d3c75);border-color:#b7eaff}
+.shop-items .shop-item:nth-child(5) .shop-icon{background:linear-gradient(145deg,#a57b29,#4d3c38);border-color:#ffe693}
+.shop-items .shop-item:nth-child(6) .shop-icon{background:linear-gradient(145deg,#6651a0,#293b71);border-color:#dac7ff}
+.shop-item b{font-size:15px;line-height:1.15}
+.shop-item small{font-size:11px;line-height:1.4;color:#e0e9f7;min-height:30px}
+@media(max-width:720px){.shop-item .shop-icon{grid-row:1/3;width:62px;height:62px;border-radius:17px}.shop-item .shop-glyph{width:54px;height:54px}.shop-item b{font-size:13px}.shop-item small{font-size:10px;line-height:1.35}}
