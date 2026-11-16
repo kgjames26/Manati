@@ -1,6 +1,8 @@
 # MANATI — Les gardiens des villes
 
-Jeu de plateforme 2D à défilement horizontal, conçu pour PC et smartphone avec React, TypeScript, Vite et Canvas 2D.
+Jeu de plateforme 2D à défilement horizontal : incarne un héros, traverse des villes, récolte des pièces, évite pièges et ennemis,
+change de tenue pour obtenir de nouveaux pouvoirs et appelle des alliés en renfort. Conçu pour PC et smartphone avec React, TypeScript, Vite et Canvas 2D.
+Jouable en ligne : https://manati-mu.vercel.app
 
 ## Démarrer
 
